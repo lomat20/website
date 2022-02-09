@@ -1,0 +1,278 @@
+<html>
+  <head>
+        <link rel="icon" href="https://img.icons8.com/ios/50/000000/head-with-brain.png"/>
+        <meta charset="utf-8">
+        <title>
+          Loren Paige Matelsky
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Arima+Madurai:wght@100;200;300;400&family=Catamaran:wght@200;300&family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
+
+        <script>
+            let party = false;
+
+            function togglePartyMode() {
+                if (party) {
+                    // if in party mode, exit party mode 
+                    party = false;
+                    document.body.classList.remove("party");
+                    document.getElementById("profilePic").src = "newWebsitePic.jpg"
+                    document.getElementById("partyButton").innerText = "Click to Activate Party Mode"
+
+                } else {
+                    // if not in party mode, enter party mode
+                    party = true;
+                    document.body.classList.add("party");
+                    document.getElementById("profilePic").src = "websiteDance.GIF"
+                    document.getElementById("partyButton").innerText = "Click to Deactivate Party Mode"
+                }
+            }
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    </head>
+    <body>
+        <div class="title">
+            <div>
+                <!-- empty, to align title -->
+            </div>
+            <h1>
+                Loren Paige Matelsky
+            </h1>
+        </div>
+        <div class="pilchorHolder">
+            <img src="newWebsitePic.jpg" class="pilchors" id="profilePic">
+        </div>
+  
+        <div class="body">
+            
+            <body style= "border:black; border-width:10px; border-style:solid;">
+            <div class="main-house">
+                <!-- <img src="newWebsitePic.jpg" class="pilchors" id="profilePic"> -->
+                <div class="section">
+                    <h2>
+                        About Me
+                    </h2>
+                    <p>
+                      I'm Loren, and I'm a graduate student of psychology at The New School in NYC. My research in the <a href="https://www.nssrperception.com/index.html" class="active">NSSR Perception Lab</a> investigates the mechanisms by which biological motion perception shapes higher-level social judgments. I am currently running a series of experiments to explore the influence of socially dominant behavior on perceived body size. I also conduct research in the Ginges Lab, exploring the relationships between religion, morality, and human conflict, as well as in the Schober Lab, where I examine the influence of social context on how meaning is inferred from ambiguous language.
+
+                    <p>
+                        Before coming to The New School, I completed my undergraduate degree in Psychology and Spanish at Rutgers University.
+                    </p>
+                       <p>
+                           When I'm not studying, I like to play tennis, practice piano, rewatch Arrested Development, and try out new recipes. 
+                       </p>
+                      
+                    </p>
+                </div>
+              <div class="section">
+                    <h2>
+                        Résumé
+                    </h2>
+                    <p>
+                        You can view my résumé <a href= "Loren Matelsky Resume.pdf">
+                            here!
+                        </a>
+                    </p>
+          </div>
+              <!--
+                    <div class="section">
+                    <h2>
+                        Papers
+                    </h2>
+                    <p>
+                        <a href= "Loren Matelsky Writing Sample (Official).pdf">
+                            The Need For Rigorous Training in ADHD Identification (2020)
+                            </a>  (not peer-reviewed)
+                    </p>
+                    <p>(More papers will go here once I've written them)</p>
+                 </div> -->
+               <!--  <div class="section">
+                     <h2>
+                         Contact Me
+                     </h2>
+                    <p>
+                         Email: loren@newschool.edu
+                    <p>
+                         Twitter: @lorenpmatelsky
+                     </p>
+                     </p>
+                 </div>
+                 -->
+                <div class="section">
+                    <h2>
+                        Party Mode
+                    </h2>
+                    <p>
+                        <button id="partyButton" onclick="togglePartyMode()">
+                            Click to Activate Party Mode
+                            
+                        </button>
+                    </p>
+                </div>
+                <div class="section">
+                    <h2>
+                        Critic Reviews
+                    </h2>
+                    <p>
+                        "5 and 1/2 stars." - Loren's Mother
+                    </p>
+                    <p>
+                        "She's absolutely fabulous. It must be genetic." - Loren's Grandmother
+                    </p>
+                    <p>
+                        "She was a pleasure to have in class." - Loren's Fifth Grade Teacher
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* {
+                border: 1px solid black; 
+            }
+            */ 
+            .body {
+                /* two selectors with same rule */
+                display: block;
+                max-width: 750px;
+                margin: auto;
+                text-align: justify;
+                grid-column: 2;
+                    grid-column-start: 2;
+                    grid-column-end: auto;
+            }
+            /* .pilchors {
+                display: grid;
+                grid-template-columns: 30% auto;
+                grid-gap: 1em;
+                align-items: center;
+                padding: 1em; */
+            /* } */
+            p {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            .pilchorHolder {
+                max-width: 300px;
+                margin: 10px auto 20px;
+                display: block;
+                text-align: center;
+                 /* grid-column: 2;
+                    grid-column-start: 2;
+                    grid-column-end: auto; */
+            }
+            .title {
+                margin: auto;
+                margin-top: 2em;
+                text-align: center;
+                text-shadow: 1px 1px black;
+            }
+            @media (max-width: 600px) {
+                .body, .title {
+                    display: block;
+                    text-align: center;
+                }
+            /* .pilchors {
+                width: 30%;
+                max-width: 3in;
+                margin: auto;
+                border-radius: 8px;
+                } */
+            }
+            body {
+                font-family: 'Junge', sans-serif;
+                transition: background 0.2s;
+                font-weight: 500;
+                font-size: 16pt;
+            }
+            h1 {
+                font-family: 'Junge', sans-serif;
+                font-weight: 700;
+            }
+            h2, h3, h4 {
+                font-family: 'Junge', sans-serif;
+                font-weight: 800;
+            }
+            body {
+                background-color: whitesmoke;
+            }
+            .party .body {
+                color: black;
+            }
+            .party .title {
+                color:white;
+                text-shadow: 2px 2px black;
+            }
+            .party h2 {
+                color:white;
+                text-shadow: 2px 2px black;
+            }
+            body.party {
+                animation: blinkingBackground alternate 1s infinite;
+            }
+            @keyframes blinkingBackground {
+                0% {background-color: black;}
+                25% {background-color: rgb(183, 80, 214);}
+                50% {background-color: rgb(0, 110, 255);}
+                75% {background-color: rgb(0, 204, 255);}
+                100% {background-color: rgb(238, 8, 142);}
+            }
+            .pilchors {
+                max-width: 3in;
+                margin-top: 27px;
+                margin-right: 10%;
+            }
+            #partyButton {
+                background-color: whitesmoke;
+                border: thin solid black; 
+                font-family: 'Junge';
+                font-size: 12pt;
+                transition: background 0.2s;
+            }
+            #partyButton:hover, .party #partyButton:hover {
+                background-color: rgb(238, 8, 142);
+                /* This is for two selectors with same rule love you */
+            }
+            .party #partyButton {
+                background-color: black;
+                color: white;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            
+        </style>
+
+        <!-- Default Statcounter code for My Student Website http://loren.matelsky.com
+        -->
+        <script type="text/javascript">
+            var sc_project = 12714673;
+            var sc_invisible = 1;
+            var sc_security = "0d031fa3"; 
+        </script>
+        <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+        <noscript>
+            <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                        class="statcounter" src="https://c.statcounter.com/12714673/0/0d031fa3/1/" alt="Web Analytics"
+                        referrerPolicy="no-referrer-when-downgrade"></a></div>
+        </noscript>
+        <!-- End of Statcounter Code -->
+        
+    </body>
+
+
+
+
+
+</html>
+ 
